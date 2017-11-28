@@ -71,7 +71,7 @@ const size_t   FUSION_TX_MAX_SIZE                            = CRYPTONOTE_BLOCK_
 const size_t   FUSION_TX_MIN_INPUT_COUNT                     = 12;
 const size_t   FUSION_TX_MIN_IN_OUT_COUNT_RATIO              = 4;
 
-const uint32_t UPGRADE_HEIGHT_V2                             = 60000;
+const uint32_t UPGRADE_HEIGHT_V2                             = 4294967294;
 const uint32_t UPGRADE_HEIGHT_V3                             = 4294967294;
 const unsigned UPGRADE_VOTING_THRESHOLD = 90;               // percent
 const uint32_t   UPGRADE_VOTING_WINDOW                       = EXPECTED_NUMBER_OF_BLOCKS_PER_DAY;  // blocks
@@ -123,8 +123,6 @@ const char     P2P_STAT_TRUSTED_PUB_KEY[]                    = "8f80f9a5a434a9f1
 const char* const SEED_NODES[] = {
   "172.104.145.158:15098",
   "178.79.135.202:15098",
-  "66.175.222.60:15098",
-  "139.162.116.228:15098",
   "137.74.41.201:15098",
   "142.44.246.181:15098"
 };
@@ -142,7 +140,8 @@ const std::initializer_list<CheckpointData> CHECKPOINTS = {
   {3000,	"305a817aabe0a01de87ed90f227b1b88dfb5d155cb76e3f52d26c1d60a2c459e" },
   {4000,	"f898fd5ed2a0b2606aa14b3afbcbbf9696c0735b13a49fd53ecfea1fb00d512a" },
   {5000,	"030b4389ccd84e550bf494950752f504e4df2b330b21a3ffcc04fbcba4b3da7e" },
-  {6800,	"945221f6253cfff88fe1d69fe09d6b7c3360f83d62e79c891e746948587f218b" }
+  {6800,	"945221f6253cfff88fe1d69fe09d6b7c3360f83d62e79c891e746948587f218b" },
+  {12000,	"4bd92a51d76d724d97937bcd9810e126c25bcbc1cb5378f16fc991f9b07b3f7f" }
 
 };
 
